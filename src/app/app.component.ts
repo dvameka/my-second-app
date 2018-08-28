@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'my-second-app';
+shoppingList: string[]=[];
+
+  newItem(item:string) {
+    console.log('>>>>new item:',item);
+    this.shoppingList.push(item);
+  }
 }
